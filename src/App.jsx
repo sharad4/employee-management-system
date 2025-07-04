@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { Download, Plus, Users, Search, Filter } from "lucide-react";
+import { Download, Plus, Users, Search, Filter, TrendingUp, Calendar, DollarSign } from "lucide-react";
 import { generateMockEmployees } from "./data/generateMock";
 import EmployeeDetail from './components/EmployeeDetail';
 import Filters from './components/Filters';
@@ -28,6 +28,7 @@ const App = () => {
   // Initialize mock data
   useEffect(() => {
     const mockData = generateMockEmployees();
+    console.log('MockData: ', mockData);
     setEmployees(mockData);
     setFilteredEmployees(mockData);
   }, []);

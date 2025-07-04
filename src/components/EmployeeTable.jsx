@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Eye, Trash2, Edit } from 'lucide-react';
 
 const EmployeeTable = ({ employees, onEdit, onDelete, onView }) => {
   return (
