@@ -28,7 +28,7 @@ const App = () => {
   // Initialize mock data
   useEffect(() => {
     const mockData = generateMockEmployees();
-    console.log('MockData: ', mockData);
+    // console.log('MockData: ', mockData);
     setEmployees(mockData);
     setFilteredEmployees(mockData);
   }, []);
